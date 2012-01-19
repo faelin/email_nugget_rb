@@ -1,0 +1,7 @@
+{"ip":"127.0.0.1","helo":"test.com","mail_from":"test@test.com","rcpt_to":"test@test.com","date":"2012-01-16 14:55:52 -0500","context":"inbound"}
+a68a72d5abdb040c7b279c707ed5477e
+From: "test" <test@test.com>
+To: "test" <test@test.com>
+Subject: Test nugget.
+
+Test nugget 1.

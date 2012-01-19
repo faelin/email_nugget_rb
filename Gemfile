@@ -12,3 +12,8 @@ group :development do
   gem "jeweler", "~> 1.6.4"
   gem "rcov", ">= 0"
 end
+
+gem "uuid"
+gem "digest/md5"
+gem "json"
+gem "stringio"
