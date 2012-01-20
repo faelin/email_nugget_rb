@@ -53,6 +53,12 @@ describe EmailNugget::Envelope do
     it "should contain the first rcpt_to in the first array item" do
       @envelope.rcpt_to[0].should == @test_envelope_hash['rcpt_to']
     end
+    it "should be the same size as the input hash recipient array" do
+      multiple_rcpt = @test_envelope_hash
+      multiple_rcpt['rcpt_to'] = ["rcpt1@test.com", "rcpt2@test.com"]
+      test_envelope = EmailNugget::Envelope.new(multiple_rcpt)
+      test_envelope.rcpt_to.length.should == multiple_rcpt['rcpt_to'].length
+    end
   end
   
   describe '#date' do

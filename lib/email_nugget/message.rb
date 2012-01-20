@@ -1,5 +1,4 @@
 require 'digest/md5'
-require 'stringio'
 
 class EmailNugget
   class Message
@@ -21,8 +20,6 @@ class EmailNugget
 
     def data
       if self.arg_data.nil?
-        self.arg_data_stream.readline
-        self.arg_data_stream.readline
         self.arg_data = self.arg_data_stream.read
       end
       self.arg_data

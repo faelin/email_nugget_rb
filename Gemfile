@@ -14,6 +14,4 @@ group :development do
 end
 
 gem "uuid"
-gem "digest/md5"
 gem "json"
-gem "stringio"
