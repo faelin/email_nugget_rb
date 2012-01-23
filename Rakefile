@@ -18,9 +18,10 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/gdi/email_nugget_rb"
   gem.license = "MIT"
   gem.summary = %Q{Save email envelope and message in single data format.}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.description = %Q{Save email envelope and message in a single data format.}
   gem.email = "development@greenviewdata.com"
   gem.authors = ["Jon Durbin"]
+  gem.version = "0.0.1"
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new

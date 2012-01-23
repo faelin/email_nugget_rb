@@ -35,6 +35,8 @@ class EmailNugget
     # Catch any errors opening or writing to the file.
     begin
       nugget_file = File.open(file_path, "w")
+      # Get a lock on the file.
+      nugget_file.flock(File::LOCK_EX | File::LOCK_NB)
       # Save the envelope as JSON in the first line.
       nugget_file.syswrite(to_hash.to_json + "\n")
       # Save the checksum in the second line.
