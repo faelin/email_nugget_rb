@@ -10,7 +10,8 @@ describe EmailNugget do
         'rcpt_to' => 'test@test.com',
         'ip' => '127.0.0.1',
         'date' => @current_time.to_s,
-        'context' => 'inbound'
+        'context' => 'inbound',
+        'misc' => {'message_id' => '123456'},
       },
       'message' => {
         'data' => 'Test write nugget.',
@@ -60,6 +61,7 @@ describe EmailNugget do
   
   describe '.new_from()' do
     it "should create a new nugget from the file path" do
+      puts "File: #{File.dirname(__FILE__) + '/../fixtures/test1.nugget'}"
       nugget = EmailNugget.new_from(File.dirname(__FILE__) + '/../fixtures/test1.nugget')
       nugget.should be_a_kind_of(EmailNugget)
     end

@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'uuid'
 require 'json'
 
@@ -26,7 +27,8 @@ class EmailNugget
       :mail_from => self.envelope.mail_from,
       :rcpt_to => self.envelope.rcpt_to,
       :date => self.envelope.date,
-      :context => self.envelope.context
+      :context => self.envelope.context,
+      :misc => self.envelope.misc,
     }
   end
   

@@ -1,6 +1,6 @@
 class EmailNugget
   class Envelope
-    attr_accessor :ip, :helo, :mail_from, :rcpt_to, :date, :context
+    attr_accessor :ip, :helo, :mail_from, :rcpt_to, :date, :context, :misc
     
     def initialize(args = {})
       @ip = args[:ip] || args['ip'] || ""
@@ -9,6 +9,18 @@ class EmailNugget
       @a_rcpt_to = args[:rcpt_to] || args['rcpt_to'] || []
       @a_date = args[:date] || args['date'] || ""
       @context = args[:context] || args['context'] || ""
+      if args[:misc].is_a?(Hash)
+        @misc = args[:misc]
+      elsif args[:misc].is_a?(Array)
+        @misc = {}
+        args[:misc].each do |misc|
+          @misc[misc] = 1
+        end
+      elsif args[:misc].is_a?(String) || args[:misc].is_a?(Integer)
+        @misc[args[:misc]] = 1
+      else
+        @misc = {}
+      end
       self.rcpt_to = []
       ensure_fields
     end
