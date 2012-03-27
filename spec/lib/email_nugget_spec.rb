@@ -61,7 +61,6 @@ describe EmailNugget do
   
   describe '.new_from()' do
     it "should create a new nugget from the file path" do
-      puts "File: #{File.dirname(__FILE__) + '/../fixtures/test1.nugget'}"
       nugget = EmailNugget.new_from(File.dirname(__FILE__) + '/../fixtures/test1.nugget')
       nugget.should be_a_kind_of(EmailNugget)
     end

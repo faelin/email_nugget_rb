@@ -21,7 +21,7 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{Save email envelope and message in a single data format.}
   gem.email = "development@greenviewdata.com"
   gem.authors = ["Jon Durbin"]
-  gem.version = "0.0.1"
+  gem.version = "0.0.3"
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
