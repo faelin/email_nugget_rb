@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = "email_nugget_rb"
+  s.name = %q{email_nugget_rb}
   s.version = "0.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jon Durbin"]
-  s.date = "2013-06-05"
-  s.description = "Save email envelope and message in a single data format."
-  s.email = "development@greenviewdata.com"
+  s.date = %q{2013-06-05}
+  s.description = %q{Save email envelope and message in a single data format.}
+  s.email = %q{development@greenviewdata.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
+    "email_nugget_rb.gemspec",
     "lib/email_nugget.rb",
     "lib/email_nugget/envelope.rb",
     "lib/email_nugget/message.rb",
@@ -35,11 +36,11 @@ Gem::Specification.new do |s|
     "spec/lib/email_nugget_spec.rb",
     "spec/spec_helper.rb"
   ]
-  s.homepage = "http://github.com/gdi/email_nugget_rb"
+  s.homepage = %q{http://github.com/gdi/email_nugget_rb}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.10"
-  s.summary = "Save email envelope and message in single data format."
+  s.rubygems_version = %q{1.6.2}
+  s.summary = %q{Save email envelope and message in single data format.}
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
@@ -68,3 +69,4 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
   end
 end
+
