@@ -57,6 +57,11 @@ describe EmailNugget do
     it "should return false if write failed" do
       @nugget.write_to("/a/a/a/a/bad_path_to.nugget").should == false
     end
+    it "should have the same checksum as the original" do
+      @nugget.write_to(File.dirname(__FILE__) + '/..fixtures/test2.nugget')
+      from_write = EmailNugget.new_from(File.dirname(__FILE__) + '/../fixtures/test2.nugget')
+      from_write.message.checksum.should == @nugget.message.checksum
+    end
   end
   
   describe '.new_from()' do
