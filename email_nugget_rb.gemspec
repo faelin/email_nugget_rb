@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "email_nugget_rb"
-  s.version = "0.0.3"
+  s.version = "0.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jon Durbin"]
-  s.date = "2012-04-24"
+  s.date = "2013-06-05"
   s.description = "Save email envelope and message in a single data format."
   s.email = "development@greenviewdata.com"
   s.extra_rdoc_files = [
@@ -68,4 +68,3 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
   end
 end
-
