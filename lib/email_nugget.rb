@@ -44,7 +44,7 @@ class EmailNugget
       # Save the checksum in the second line.
       nugget_file.syswrite(self.message.checksum + "\n")
       # Save the message contents after the second line.
-      nugget_file.syswrite(self.message.data + "\n")
+      nugget_file.syswrite(self.message.data)
     rescue => e
       # Unable to save email nugget to file_path
       #puts "Error saving email nugget to #{file_path}: #{e.to_s}"
