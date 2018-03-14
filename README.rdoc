@@ -14,6 +14,6 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2012 Jon Durbin. See LICENSE.txt for
+Copyright (c) 2012 Greenview Data, Inc. See LICENSE.txt for
 further details.
 
